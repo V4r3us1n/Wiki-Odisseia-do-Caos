@@ -21,6 +21,7 @@
     --transparente: rgba(0, 0, 255, 0);
     --cor-container-esquerdo-1-550px: rgba(6, 6, 65, 0.521);
     --cor-container-esquerdo-2-550px: rgb(47, 2, 56, 0.521);
+    --cor-container-esquerdo-menor: rgba(17, 2, 41, 0.863);
 }
 
 body {
@@ -621,9 +622,52 @@ section.creditos p a#creditos:hover {
 
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 450px) {
+
+    /*Modificando o Menu lateral para ir para cima*/
+
+    div.container-esquerda {
+        position: fixed;
+        background-color: rgba(0, 0, 255, 0);
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    div.container-esquerda div {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--cor-container-esquerdo-menor);
+        height: 50px;
+        padding: 10px 0px;
+        border-radius: 0px;
+    }
+
+    div.container-esquerda div ul {
+        display: flex;
+        margin: 0px 40px;
+    }
+
+    div.container-esquerda div ul li {
+        margin-bottom: 0px;
+        margin-right: 30px;
+    }
+
+    div.container-esquerda ul li p {
+        display: none;
+    }
+
+    img.imagem-fandom {
+        margin-top: 0px;
+    }
 
     /*Tornando header responsivo*/
+
+    header {
+        margin-top: 70px;
+    }
 
     header h1 {
         font-size: 150%;
@@ -639,6 +683,10 @@ section.creditos p a#creditos:hover {
         max-width: 30px;
         min-height: 20px;
         min-width: 20px;
+    }
+
+    img.img-nav-inv {
+        filter: invert(100%);
     }
 
     div.curtidas label {
