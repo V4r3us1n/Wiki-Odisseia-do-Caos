@@ -151,7 +151,7 @@ hr.footer {
 }
 
 input.cadastro {
-    padding: 10px 125px;
+    padding: 10px 25%;
     margin: auto;
     justify-content: center;
 }
@@ -185,5 +185,11 @@ input.cadastro {
 @media screen and (max-width: 650px) {
     div.formulario {
         width: 400px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    div.formulario {
+        max-width: 410px;
     }
 }

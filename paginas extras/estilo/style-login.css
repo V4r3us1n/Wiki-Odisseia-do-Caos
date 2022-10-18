@@ -98,12 +98,18 @@ hr.fim-fieldset-info {
 
 /*Botões para Entrar ou Cadastrar*/
 
+
 fieldset.button {
     margin: 0px 100px;
     margin-bottom: 20px;
 }
 
+.button div.container {
+    width: 90%;
+}
+
 .button p {
+    width: 110%;
     text-align: center;
     margin: 10px 0px;
 }
@@ -120,7 +126,7 @@ fieldset.button {
 }
 
 a.entrar {
-    width: 100px;
+    width: 37%;
     display: block;
     padding: 10px 100px;
     padding-bottom: 10px;
@@ -161,4 +167,14 @@ input.entrar {
         padding: 10px 90px;
     }
 
+}
+
+@media screen and (max-width: 420px) {
+    main {
+        max-width: 410px;
+    }
+
+    a.entrar {
+        max-width: 100px;
+    }
 }
