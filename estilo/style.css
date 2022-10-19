@@ -64,6 +64,7 @@ div.container-esquerda div {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 100vw;
     justify-content: space-between;
 }
 
@@ -593,6 +594,7 @@ section.creditos p a#creditos:hover {
         background-color: var(--cor-container-esquerdo-1-550px);
         border-radius: 20px;
         height: auto;
+        width: auto;
     }
 
     div.container-direita {
@@ -620,9 +622,19 @@ section.creditos p a#creditos:hover {
         margin: 10px 30px;
     }
 
+    /*Mais sobre o universo do rpg*/
+
+    section.mais-sobre-universo {
+        width: 98%;
+    }
+
 }
 
 @media screen and (max-width: 450px) {
+
+    body {
+        width: 104vw;
+    }
 
     /*Modificando o Menu lateral para ir para cima*/
 
@@ -630,9 +642,10 @@ section.creditos p a#creditos:hover {
         position: fixed;
         background-color: rgba(0, 0, 255, 0);
         justify-content: center;
-        width: 100%;
+        width: 95vw;
         height: auto;
         align-items: center;
+        margin: 0px;
     }
 
     div.container-esquerda div {
@@ -643,11 +656,12 @@ section.creditos p a#creditos:hover {
         height: 50px;
         padding: 10px 0px;
         border-radius: 0px;
+        margin: 0px;
     }
 
     div.container-esquerda div ul {
         display: flex;
-        margin: 0px 40px;
+        margin: 0px auto;
     }
 
     div.container-esquerda div ul li {
@@ -663,6 +677,12 @@ section.creditos p a#creditos:hover {
         margin-top: 0px;
     }
 
+    /*editando o container direito do site, que agora não é mais direito xd*/
+
+    div.container-direita {
+        width: 10w;
+    }
+
     /*Tornando header responsivo*/
 
     header {
@@ -670,7 +690,7 @@ section.creditos p a#creditos:hover {
     }
 
     header h1 {
-        font-size: 150%;
+        font-size: 140%;
     }
 
     header img {
@@ -678,6 +698,14 @@ section.creditos p a#creditos:hover {
         min-height: 40px;
     }
     
+    header div.curtidas label {
+        display: none;
+    }
+
+    header div.curtidas {
+        padding: 10px 10px;
+    }
+
     header div.curtidas div#icurtir {
         max-height: 30px;
         max-width: 30px;
@@ -699,6 +727,7 @@ section.creditos p a#creditos:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        margin: 30px 20px 0px 20px;
     }
 
     li.col1 {
@@ -722,6 +751,10 @@ section.creditos p a#creditos:hover {
         margin: 10px;
     }
 
+    nav.dp-menu {
+        margin: 0px;
+    }
+
     /* Caso seja necessário usar eles individualmente
     .dp-menu ul.nav li#home:hover ul {
     }
@@ -740,21 +773,74 @@ section.creditos p a#creditos:hover {
         bottom: 120px;
     }
 
+    /*Ajustando o main*/
+
+    main {
+        border-radius: 0px;
+        width: 100.2%;
+        padding: 0px;
+    }
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    div#main {
+        margin: 0px 10px 20px 10px;
+    }
+
+    section {
+        margin-top: 15px;
+        padding: 0px;
+    }
+
     /* Editando o tamanho dos cards em dispositivo celulares */
 
     ul.campanhas li {
-        max-height: 120px;
-        max-width: 300px;
+        max-height: auto;
+        max-width: 90%;
         margin: 10px auto;
     }
     
     img.card {
-        max-height: 120px;
-        max-width: 300px;
+        max-height: auto;
+        max-width: 90%;
     }
     
     img.card:hover {
-        max-height: 100px;
-        max-width: 250px;
+        max-height: auto;
+        max-width: 80%;
     }
+
+    /*Mais sobre o universo do rpg*/
+
+    section.mais-sobre-universo {
+        width: 95%;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    /*header*/
+
+    header h1 {
+        font-size: 120%;
+    }
+
+    /*Editando a seção das campanhas*/
+
+    ul.campanhas li {
+        max-height: 85px;
+    }
+    
+    img.card {
+        max-height: 85px;
+    }
+    
+    img.card:hover {
+        max-height: 70px;
+    }
+
 }
