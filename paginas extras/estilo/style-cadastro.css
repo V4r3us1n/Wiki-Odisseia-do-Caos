@@ -188,8 +188,65 @@ input.cadastro {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     div.formulario {
-        max-width: 410px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    body {
+        height: 120vh;
+        background-attachment: fixed;
+    }
+
+    div.formulario {
+        height: auto;
+        margin: 100px auto;
+    }
+
+    div.form {
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+
+    form div.form hr {
+        height: 0px;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    fieldset.info-conta {
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    fieldset.info-pessoal {
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    div.genero {
+        width: 100%;
+        margin: 10px auto 20px auto;
+    }
+
+    div.gen-1 {
+        width: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.genero div.gen-1 p {
+        display: inline;
+        margin: 5px 0px;
+    }
+
+    div.genero div.gen-1 p label {
+        width: 100%; 
     }
 }

@@ -80,7 +80,8 @@ p.texto {
 }
 
 p.checkbox {
-    margin: 0px 160px;
+    width: 100%;
+    text-align: center;
 }
 
 input.inserir-info {
@@ -100,16 +101,17 @@ hr.fim-fieldset-info {
 
 
 fieldset.button {
-    margin: 0px 100px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
 .button div.container {
-    width: 90%;
+    width: 80%;
+    margin: auto;
 }
 
 .button p {
-    width: 110%;
+    width: 100%;
     text-align: center;
     margin: 10px 0px;
 }
@@ -125,18 +127,30 @@ fieldset.button {
     color: var(--cor-fonte-padrão);
 }
 
-a.entrar {
-    width: 37%;
-    display: block;
-    padding: 10px 100px;
-    padding-bottom: 10px;
-    margin: auto;
+div.botao {
+    width: 100%;
+    height: 40px;
+}
+
+div.entrar {
+    height: 40px;
+}
+
+a.botao-a {
+    width: 100%;
+    padding: 11px 0px;
+    text-align: center;
 }
 
 input.entrar {
-    padding: 10px 125px;
-    margin: auto;
+    width: 100%;
     justify-content: center;
+    height: 40px;
+}
+
+a.botao-a:hover {
+    color: var(--cor-borda-button-hover);
+    cursor: pointer;
 }
 
 .entrar:hover {
@@ -147,34 +161,24 @@ input.entrar {
 }
 
 @media screen and (max-width: 650px) {
-
-    
-
     main {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         width: 400px;
-    }
-
-    p.checkbox {
-        margin: 0px 110px;
-    }
-
-    fieldset.button {
-        margin: 0px 50px;
-        margin-bottom: 20px;
-    }
-
-    a.entrar {
-        padding: 10px 90px;
     }
 
 }
 
-@media screen and (max-width: 420px) {
-    main {
-        max-width: 410px;
+@media screen and (max-width: 450px) {
+    main.container {
+        width: 90%;
     }
+}
 
-    a.entrar {
-        max-width: 100px;
+@media screen and (max-width: 360px) {
+    main.container {
+        width: 95%;
     }
 }
