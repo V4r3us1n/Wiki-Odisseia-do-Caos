@@ -579,7 +579,7 @@ section.creditos p a#creditos:hover {
 @media screen and (max-width: 550px) {
 
     body {
-        width: 104vw;
+        width: 100vw;
         overflow-x: hidden;
     }
 
@@ -777,7 +777,7 @@ section.creditos p a#creditos:hover {
 
     main {
         border-radius: 0px;
-        width: 100.2%;
+        width: 100%;
         padding: 0px;
     }
 
