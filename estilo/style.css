@@ -25,7 +25,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 104vw;
     background-color: var(--cor-fundo-imagens-nav-container-esquerdo);
     color: var(--cor-fonte-padrão);
     display: flex;
@@ -109,7 +109,7 @@ div.container-esquerda ul li img:hover {
 div.container-direita {
     position: absolute;
     left: 70px;
-    max-width: 93%;
+    max-width: 100%;
     background-image: url(https://i.ytimg.com/vi/ofQvYuvWSU4/maxresdefault.jpg);
     background-size: cover;
     background-position: center center;
@@ -571,6 +571,13 @@ section.creditos p a#creditos:hover {
 }
 
 @media screen and (max-width: 590px) {
+
+    div.container-direita {
+        position: absolute;
+        left: 70px;
+        max-width: 100%;
+    }
+
     header h1 {
         font-size: 1.5em;
     }
@@ -579,7 +586,7 @@ section.creditos p a#creditos:hover {
 @media screen and (max-width: 550px) {
 
     body {
-        width: 100vw;
+        width: 103.8vw;
         overflow-x: hidden;
     }
 
@@ -600,7 +607,7 @@ section.creditos p a#creditos:hover {
     div.container-direita {
         position: unset;
         left: 0px;
-        width: 100vw;
+        width: 97vw;
     }
 
     header {
@@ -632,10 +639,6 @@ section.creditos p a#creditos:hover {
 
 @media screen and (max-width: 450px) {
 
-    body {
-        width: 104vw;
-    }
-
     /*Modificando o Menu lateral para ir para cima*/
 
     div.container-esquerda {
@@ -662,11 +665,16 @@ section.creditos p a#creditos:hover {
     div.container-esquerda div ul {
         display: flex;
         margin: 0px auto;
+
     }
 
     div.container-esquerda div ul li {
         margin-bottom: 0px;
-        margin-right: 30px;
+        padding-right: 20px;
+    }
+
+    div.container-esquerda div ul li img {
+        margin: auto;
     }
 
     div.container-esquerda ul li p {
