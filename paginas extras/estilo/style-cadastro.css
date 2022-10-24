@@ -32,8 +32,8 @@ body {
 
 div.formulario {
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     height: auto;
     width: 700px;
@@ -197,13 +197,18 @@ input.cadastro {
 @media screen and (max-width: 380px) {
 
     body {
-        height: 120vh;
+        height: 100vh;
+        width: 100vw;
         background-attachment: fixed;
     }
 
     div.formulario {
+        position: initial;
+        right: 0;
+        bottom: 0;
+        transform: translate(0, 0);
         height: auto;
-        margin: 200px auto 100px auto;
+        margin: 30px auto;
     }
 
     div.form {
