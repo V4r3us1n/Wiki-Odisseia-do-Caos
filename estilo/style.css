@@ -586,7 +586,7 @@ section.creditos p a#creditos:hover {
 @media screen and (max-width: 550px) {
 
     body {
-        width: 103.8vw;
+        width: 100vw;
         overflow-x: hidden;
     }
 
@@ -607,7 +607,7 @@ section.creditos p a#creditos:hover {
     div.container-direita {
         position: unset;
         left: 0px;
-        width: 97vw;
+        width: 100vw;
     }
 
     header {
@@ -645,36 +645,49 @@ section.creditos p a#creditos:hover {
         position: fixed;
         background-color: rgba(0, 0, 255, 0);
         justify-content: center;
-        width: 95vw;
+        width: 100vw;
         height: auto;
         align-items: center;
         margin: 0px;
     }
 
     div.container-esquerda div {
-        width: 100vw;
+        width: 90vw;
         display: flex;
         flex-direction: row;
         background-color: var(--cor-container-esquerdo-menor);
         height: 50px;
-        padding: 10px 0px;
+        padding: 10px 5vw;
         border-radius: 0px;
         margin: 0px;
     }
 
     div.container-esquerda div ul {
         display: flex;
-        margin: 0px auto;
+        margin: 0px;
+        align-items: center;
+        width: 60%;
+        margin-left: 5vw;
+    }
 
+    div.container-esquerda div ul.container-esquerda {
+        justify-content: end;
+        width: 30%;
+        margin-right: 5%;
+        margin-left: 0;
     }
 
     div.container-esquerda div ul li {
-        margin-bottom: 0px;
-        padding-right: 20px;
+        margin: 0px;
+        height: 45px;
+        width: 45px;
+        align-items: center;
     }
 
     div.container-esquerda div ul li img {
         margin: auto;
+        width: 40px;
+        height: 40px;
     }
 
     div.container-esquerda ul li p {

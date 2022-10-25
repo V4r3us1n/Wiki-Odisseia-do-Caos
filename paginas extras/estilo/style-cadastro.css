@@ -197,7 +197,7 @@ input.cadastro {
 @media screen and (max-width: 380px) {
 
     body {
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         background-attachment: fixed;
     }
@@ -226,13 +226,13 @@ input.cadastro {
     }
 
     fieldset.info-conta {
-        min-width: 90%;
-        max-width: 90%;
+        min-width: 100%;
+        max-width: 100%;
     }
 
     fieldset.info-pessoal {
-        min-width: 90%;
-        max-width: 90%;
+        min-width: 100%;
+        max-width: 100%;
     }
 
     div.genero {
