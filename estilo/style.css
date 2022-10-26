@@ -219,6 +219,10 @@ div.item-menu {
     display: flex;
 }
 
+div.item-menu p.descarte-450px {
+    margin-left: 10px;
+}
+
 div.setas-menu {
     display: flex;
     width: 15px;
@@ -253,6 +257,10 @@ div.item-menu > div.setas-menu:hover {
     text-align: center;
     background-color: var(--cor-menu-invisivel);
     padding: 5px;
+}
+
+.dp-menu ul.nav li.link:hover ul {
+    min-width: 100px;
 }
 
 .dp-menu ul.nav li:hover ul ul.campanhas {
@@ -640,7 +648,7 @@ section.creditos p a#creditos:hover {
 @media screen and (max-width: 450px) {
 
     /*Modificando o Menu lateral para ir para cima*/
-
+    
     div.container-esquerda {
         position: fixed;
         background-color: rgba(0, 0, 255, 0);
@@ -745,53 +753,15 @@ section.creditos p a#creditos:hover {
     /*Tornando o menu responsivo*/
 
     .dp-menu ul.nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 30px 20px 0px 20px;
+        margin: 30px 0px 30px 0px;
     }
 
-    li.col1 {
-        grid-column: 1;
+    div.item-menu p.descarte-450px {
+        display: none;
     }
-
-    li.col2 {
-        grid-column: 2;
-    }
-
-    li.row1 {
-        grid-row: 1;
-    }
-
-    li.row2 {
-        grid-row: 2;
-    }
-
-
-    .dp-menu ul.nav li {
-        margin: 10px;
-    }
-
-    nav.dp-menu {
-        margin: 0px;
-    }
-
-    /* Caso seja necessário usar eles individualmente
-    .dp-menu ul.nav li#home:hover ul {
-    }
-
-    .dp-menu ul.nav li#rpg:hover ul {
-    }
-
-    .dp-menu ul.nav li#links-externos:hover ul {
-    }
-
-    .dp-menu ul.nav li#wiki:hover ul {
-    }
-    */
 
     .dp-menu ul.nav li ul li.clicar:hover ul.campanhas {
-        bottom: 120px;
+        bottom: 135px;
     }
 
     /*Ajustando o main*/
