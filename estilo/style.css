@@ -793,6 +793,12 @@ section.creditos p a#creditos:hover {
         margin: 10px auto;
     }
     
+    .dp-menu ul.nav li ul li.clicar:hover ul.campanhas {
+        max-width: 120px;
+        min-width: 100px;
+        bottom: 107px;
+    }
+
     img.card {
         max-height: auto;
         max-width: 90%;
