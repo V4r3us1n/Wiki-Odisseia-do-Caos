@@ -110,6 +110,11 @@ fieldset.button {
     margin: auto;
 }
 
+
+div.container > div {
+    position: relative;
+}
+
 .button p {
     width: 100%;
     text-align: center;
@@ -133,27 +138,49 @@ div.botao {
 }
 
 div.entrar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 40px;
+    width: 100%;
 }
 
-a.botao-a {
+a.botao-cadastro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     padding: 11px 0px;
     text-align: center;
 }
 
 input.entrar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     justify-content: center;
-    height: 40px;
+    height: 44px;
 }
 
-a.botao-a:hover {
+a.botao-cadastro:hover {
     color: var(--cor-borda-button-hover);
     cursor: pointer;
 }
 
+input.entrar:hover {
+    height: 48px;
+}
+
+div.entrar:hover {
+    height: 42px;
+}
+
 .entrar:hover {
+    width: 104%;
     border: 2px solid var(--cor-borda-button-hover);
     border-radius: 30px;
     cursor: pointer;
