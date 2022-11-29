@@ -33,11 +33,11 @@
                             </p>
                             <p  class="p-text">
                                 <label for="irsenha">Confirmar Senha:</label>
-                                <input type="password" name="rsenha" id="irsenha" class="senha text" minlength="10" placeholder="**********" required>
+                                <input type="password" name="rsenha" id="irsenha" class="senha text" minlength="10" placeholder="**********" required onblur="checarSenha()">
                             </p>
                             <p class="checkbox">
-                                <input type="checkbox" name="check" id="icheck">
-                                <label for="icheck">Exibir senha</label>
+                                <input type="checkbox" name="check" id="icheck" onclick="mostrarSenha()">
+                                <label for="icheck" onclick="mostrarSenha()">Exibir senha</label>
                             </p>
                         </div>
                     </fieldset>
@@ -81,5 +81,6 @@
             </form>
         </main>
     </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
